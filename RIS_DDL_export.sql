@@ -2,7 +2,7 @@
 --  File created - Tuesday-February-11-2025   
 --------------------------------------------------------
 --------------------------------------------------------
---  DDL for DB Link RIS_MIGRATION_CIP
+--  DDL for DB RIS
 --------------------------------------------------------
 
   CREATE DATABASE LINK "RIS_MIGRATION_CIP"
@@ -1188,7 +1188,7 @@
    COMMENT ON COLUMN "RIS_PROD"."FACILITY_ADDITIONAL"."NUM_REEFER_CONNECTIONS" IS 'Number of reefer connections';
    COMMENT ON COLUMN "RIS_PROD"."FACILITY_ADDITIONAL"."OPTICAL_CHARACTER_RECOGNITION" IS 'Optical character recognition';
    COMMENT ON COLUMN "RIS_PROD"."FACILITY_ADDITIONAL"."SIDE_RAMP" IS 'Side ramp';
-   COMMENT ON COLUMN "RIS_PROD"."FACILITY_ADDITIONAL"."STORAGE_AREA_M2" IS 'Storage area [m�]';
+   COMMENT ON COLUMN "RIS_PROD"."FACILITY_ADDITIONAL"."STORAGE_AREA_M2" IS 'Storage area [m²]';
    COMMENT ON COLUMN "RIS_PROD"."FACILITY_ADDITIONAL"."STORAGE_AREA_TEU" IS 'Storage area [TEU]';
    COMMENT ON COLUMN "RIS_PROD"."FACILITY_ADDITIONAL"."TRACK_SCALE" IS 'Track scale';
    COMMENT ON COLUMN "RIS_PROD"."FACILITY_ADDITIONAL"."ESCALATOR_FOR_PLATFORM_ACCESS" IS 'Escalator/ramp for platform access';
@@ -1222,7 +1222,7 @@
    COMMENT ON COLUMN "RIS_PROD"."FACILITY_ADDITIONAL"."ACCESS_LINE_ELECTRIFIED" IS 'Access line electrification';
    COMMENT ON COLUMN "RIS_PROD"."FACILITY_ADDITIONAL"."CLEARANCE_GAUGE_ACCESS_LINE" IS 'Access line clearance gauge';
    COMMENT ON COLUMN "RIS_PROD"."FACILITY_ADDITIONAL"."LENGTH_ACCESS_LINE" IS 'Length of access/branch line [km]';
-   COMMENT ON COLUMN "RIS_PROD"."FACILITY_ADDITIONAL"."MAX_ACCESS_LINE_INCLINE" IS 'Access line max. incline [‰]';
+   COMMENT ON COLUMN "RIS_PROD"."FACILITY_ADDITIONAL"."MAX_ACCESS_LINE_INCLINE" IS 'Access line max. incline [â°]';
    COMMENT ON COLUMN "RIS_PROD"."FACILITY_ADDITIONAL"."MAX_AXLE_LOAD_ACCESS_LINE" IS 'Access line max. axle load [t]';
    COMMENT ON COLUMN "RIS_PROD"."FACILITY_ADDITIONAL"."MAX_TRAIN_LENGTH_ACCESS_LINE" IS 'Access line max. train length [m]';
    COMMENT ON COLUMN "RIS_PROD"."FACILITY_ADDITIONAL"."MIN_TRACK_RADIUS_ACCESS_LINE" IS 'Access line min. track radius [m]';
@@ -4132,8 +4132,8 @@
    COMMENT ON COLUMN "RIS_PROD"."TRACK_LINE_PROPERTY"."UPDATED_AT" IS 'Timestamp of last modification of track line property';
    COMMENT ON COLUMN "RIS_PROD"."TRACK_LINE_PROPERTY"."UPDATED_BY" IS 'Reference to user who modified track line property last';
    COMMENT ON COLUMN "RIS_PROD"."TRACK_LINE_PROPERTY"."GAUGING" IS 'Cinematic reference profiles for gauging according to EN 15273';
-   COMMENT ON COLUMN "RIS_PROD"."TRACK_LINE_PROPERTY"."GRADIENT_DIR_1" IS 'The maximum positive slope with reference to the direction of track [‰]';
-   COMMENT ON COLUMN "RIS_PROD"."TRACK_LINE_PROPERTY"."GRADIENT_DIR_2" IS 'The maximum positive slope with reference to the direction of track [‰]';
+   COMMENT ON COLUMN "RIS_PROD"."TRACK_LINE_PROPERTY"."GRADIENT_DIR_1" IS 'The maximum positive slope with reference to the direction of track [â°]';
+   COMMENT ON COLUMN "RIS_PROD"."TRACK_LINE_PROPERTY"."GRADIENT_DIR_2" IS 'The maximum positive slope with reference to the direction of track [â°]';
    COMMENT ON COLUMN "RIS_PROD"."TRACK_LINE_PROPERTY"."INTERMODAL_FREIGHT_CODE" IS 'Classification of the operability of intermodal loading units in regards of height and width (UIC leaflet 596-6)';
    COMMENT ON COLUMN "RIS_PROD"."TRACK_LINE_PROPERTY"."LINE_CATEGORY" IS 'Maximum axle load and permissible load per unit of length according to EN 15528:2008';
    COMMENT ON COLUMN "RIS_PROD"."TRACK_LINE_PROPERTY"."MAXIMUM_SPEED" IS 'Technical speed of track applicable for the freight traffic [km/h]';
@@ -4174,8 +4174,8 @@
    COMMENT ON COLUMN "RIS_PROD"."TRACK_LINE_PROPERTY_AUD"."REV" IS 'Reference to revision of audit log';
    COMMENT ON COLUMN "RIS_PROD"."TRACK_LINE_PROPERTY_AUD"."REVTYPE" IS 'Type of audit log (0 for creation, 1 for update, 2 for deletion)';
    COMMENT ON COLUMN "RIS_PROD"."TRACK_LINE_PROPERTY_AUD"."GAUGING" IS 'Cinematic reference profiles for gauging according to EN 15273';
-   COMMENT ON COLUMN "RIS_PROD"."TRACK_LINE_PROPERTY_AUD"."GRADIENT_DIR_1" IS 'The maximum positive slope with reference to the direction of track [‰]';
-   COMMENT ON COLUMN "RIS_PROD"."TRACK_LINE_PROPERTY_AUD"."GRADIENT_DIR_2" IS 'The maximum positive slope with reference to the direction of track [‰]';
+   COMMENT ON COLUMN "RIS_PROD"."TRACK_LINE_PROPERTY_AUD"."GRADIENT_DIR_1" IS 'The maximum positive slope with reference to the direction of track [â°]';
+   COMMENT ON COLUMN "RIS_PROD"."TRACK_LINE_PROPERTY_AUD"."GRADIENT_DIR_2" IS 'The maximum positive slope with reference to the direction of track [â°]';
    COMMENT ON COLUMN "RIS_PROD"."TRACK_LINE_PROPERTY_AUD"."INTERMODAL_FREIGHT_CODE" IS 'Classification of the operability of intermodal loading units in regards of height and width (UIC leaflet 596-6)';
    COMMENT ON COLUMN "RIS_PROD"."TRACK_LINE_PROPERTY_AUD"."LINE_CATEGORY" IS 'Maximum axle load and permissible load per unit of length according to EN 15528:2008';
    COMMENT ON COLUMN "RIS_PROD"."TRACK_LINE_PROPERTY_AUD"."MAXIMUM_SPEED" IS 'Technical speed of track applicable for the freight traffic [km/h]';
